@@ -7,21 +7,23 @@ using namespace std;
 
 int main()
 {
-    int purchase = 95;
-    float sateSalesTax = .04,
-        countySalesTax = .02;
-    //set decimal percision to 2 places after the decimal point. Ex 0.00
-    cout << setprecision(2) << fixed << endl;
+    int purchase;
+    int stateSalesTax;
+    int countySalesTax;
 
-    cout << "The total state sales tax on $95 dollar purchase is $";
-    cout << purchase * sateSalesTax << endl;
+    int awmser;
+    cout << "Please enter intial purchase:"; 
+    cin >> purchase; 
+    cout << "Please enter the states sales tax:";
+    cin >> stateSalesTax;
+    cout << "Please enter the county sales tax:";
+    cin >> countySalesTax;
 
-    cout << "The total county sales tax on $95 dollar purchase is $"; 
-    cout << purchase * countySalesTax << endl << endl; 
+    cout << "The total state sales tax dollar purchase is $";
+    cout << purchase * stateSalesTax << endl;
+
+    cout << "The total county sales tax dollar purchase is $";
+    cout << purchase * countySalesTax << endl << endl;
 
     return 0;
 }
-
-
-
-
